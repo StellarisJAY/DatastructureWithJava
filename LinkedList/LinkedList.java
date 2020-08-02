@@ -63,8 +63,8 @@ public class LinkedList<T> {
     public void deleteHead(){
         if(head.getNext() != null){
             head.setNext(head.getNext().getNext());
+            length--;
         }
-        length--;
     }
 
     /**
